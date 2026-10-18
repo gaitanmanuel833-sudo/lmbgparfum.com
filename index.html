@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfumería Beltrán — fragancias seleccionadas, atención personalizada y pedidos por WhatsApp en Nicaragua.">
+    <meta name="theme-color" content="#09090c">
+    <meta name="author" content="Perfumería Beltrán">
+    <title>Perfumería Beltrán | Esencias & Elegancia</title>
+
+    <link rel="icon" type="image/png" href="imagenes/logo.png">
+
+    <!-- Open Graph / Redes Sociales y WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Perfumería Beltrán | Esencias & Elegancia">
+    <meta property="og:description" content="Fragancias seleccionadas, atención personalizada y pedidos directos por WhatsApp en Nicaragua.">
+    <meta property="og:image" content="imagenes/logo.png">
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#inicio" class="logo-link" aria-label="Perfumería Beltrán - Inicio">
+                <img src="imagenes/logo.png" alt="Logo de Perfumería Beltrán" class="logo-img">
+                <div class="logo-text">
+                    <strong>PERFUMERÍA</strong>
+                    <span>BELTRÁN</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li><a class="nav-link" href="#perfumes">Colección</a></li>
+                    <li><a class="nav-link" href="#ofertas">Ofertas</a></li>
+                    <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-background" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <span class="eyebrow hero-eyebrow"><i class="fa-solid fa-sparkles"></i> ESENCIA • ELEGANCIA • PERSONALIDAD</span>
+                <h1>Descubre la esencia de <span>tu personalidad</span></h1>
+                <p>Fragancias seleccionadas para acompañarte y dejar una impresión inolvidable en cada ocasión.</p>
+
+                <div class="hero-buttons">
+                    <a href="#perfumes" class="btn btn-primary"><i class="fa-solid fa-bottle-droplet"></i> Explorar colección</a>
+                    <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20perfumes%20de%20Perfumer%C3%ADa%20Beltr%C3%A1n." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp</a>
+                </div>
+
+                <div class="hero-info" aria-label="Ventajas">
+                    <div><i class="fa-solid fa-gem"></i><span>Fragancias seleccionadas</span></div>
+                    <div><i class="fa-solid fa-headset"></i><span>Atención personalizada</span></div>
+                    <div><i class="fa-brands fa-whatsapp"></i><span>Pedidos por WhatsApp</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productos section" id="perfumes">
+            <div class="section-header reveal">
+                <span class="eyebrow">NUESTRA COLECCIÓN</span>
+                <h2>Encuentra tu fragancia ideal</h2>
+                <p>Explora nuestra selección de perfumes y elige la esencia que mejor representa tu estilo.</p>
+            </div>
+
+            <div class="catalog-toolbar reveal">
+                <label class="search-container" for="buscador">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <input type="search" id="buscador" placeholder="Buscar por nombre o descripción..." autocomplete="off">
+                </label>
+
+                <div class="filtros" role="group" aria-label="Filtrar productos">
+                    <button class="filtro active" type="button" data-filter="todos">Todos</button>
+                    <button class="filtro" type="button" data-filter="hombre">Hombre</button>
+                    <button class="filtro" type="button" data-filter="mujer">Mujer</button>
+                    <button class="filtro" type="button" data-filter="unisex">Unisex</button>
+                </div>
+            </div>
+
+            <div class="catalog-status" aria-live="polite">
+                <span id="resultados">6 fragancias disponibles</span>
+            </div>
+
+            <div class="productos-grid" id="productos-grid">
+                <article class="producto reveal" data-category="hombre" data-name="Elegance Noir">
+                    <div class="producto-imagen">
+                        <span class="producto-badge">NUEVO</span>
+                        <img src="imagenes/perfume1.png" alt="Perfume Elegance Noir" loading="lazy">
+                        <div class="imagen-respaldo" aria-hidden="true"><i class="fa-solid fa-spray-can-sparkles"></i><span>Elegance Noir</span></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">PERFUME PARA HOMBRE</span>
+                        <h3>Elegance Noir</h3>
+                        <p>Una fragancia elegante y sofisticada para ocasiones especiales.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$45.00</span>
+                            <a href="https://wa.me/50578174953?text=Hola%2C%20estoy%20interesado%20en%20comprar%20el%20perfume%20Elegance%20Noir." target="_blank" rel="noopener noreferrer" class="btn-comprar"><i class="fa-brands fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto reveal" data-category="hombre" data-name="Royal Oud">
+                    <div class="producto-imagen">
+                        <span class="producto-badge oferta">OFERTA</span>
+                        <img src="imagenes/perfume2.jpg" alt="Perfume Royal Oud" loading="lazy">
+                        <div class="imagen-respaldo" aria-hidden="true"><i class="fa-solid fa-crown"></i><span>Royal Oud</span></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">PERFUME PARA HOMBRE</span>
+                        <h3>Royal Oud</h3>
+                        <p>Un aroma intenso con personalidad, elegancia y carácter.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$55.00</span>
+                            <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20comprar%20el%20perfume%20Royal%20Oud." target="_blank" rel="noopener noreferrer" class="btn-comprar"><i class="fa-brands fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto reveal" data-category="mujer" data-name="Golden Bloom">
+                    <div class="producto-imagen">
+                        <span class="producto-badge destacado">DESTACADO</span>
+                        <img src="imagenes/perfume3.png" alt="Perfume Golden Bloom" loading="lazy">
+                        <div class="imagen-respaldo" aria-hidden="true"><i class="fa-solid fa-spa"></i><span>Golden Bloom</span></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">PERFUME PARA MUJER</span>
+                        <h3>Golden Bloom</h3>
+                        <p>Una esencia fresca, delicada y elegante para destacar cada momento.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$39.00</span>
+                            <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20comprar%20el%20perfume%20Golden%20Bloom." target="_blank" rel="noopener noreferrer" class="btn-comprar"><i class="fa-brands fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto reveal" data-category="mujer" data-name="Rose Essence">
+                    <div class="producto-imagen">
+                        <span class="producto-badge popular">POPULAR</span>
+                        <img src="imagenes/perfume4.png" alt="Perfume Rose Essence" loading="lazy">
+                        <div class="imagen-respaldo" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Rose Essence</span></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">PERFUME PARA MUJER</span>
+                        <h3>Rose Essence</h3>
+                        <p>Una fragancia femenina, delicada y llena de personalidad.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$42.00</span>
+                            <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20comprar%20el%20perfume%20Rose%20Essence." target="_blank" rel="noopener noreferrer" class="btn-comprar"><i class="fa-brands fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto reveal" data-category="unisex" data-name="Sensus">
+                    <div class="producto-imagen">
+                        <span class="producto-badge oferta">OFERTA</span>
+                        <img src="imagenes/perfume5.png" alt="Perfume Sensus" loading="lazy">
+                        <div class="imagen-respaldo" aria-hidden="true"><i class="fa-solid fa-moon"></i><span>Sensus</span></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">PERFUME UNISEX</span>
+                        <h3>Sensus</h3>
+                        <p>Una fragancia moderna para quienes buscan algo diferente. Producto de marca AVON.</p>
+                        <div class="producto-footer">
+                            <span class="precio">C$540.00</span>
+                            <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20comprar%20el%20perfume%20Sensus." target="_blank" rel="noopener noreferrer" class="btn-comprar"><i class="fa-brands fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto reveal" data-category="unisex" data-name="Ocean Luxury">
+                    <div class="producto-imagen">
+                        <span class="producto-badge oferta">OFERTA</span>
+                        <img src="imagenes/perfume6.jpg" alt="Perfume Ocean Luxury" loading="lazy">
+                        <div class="imagen-respaldo" aria-hidden="true"><i class="fa-solid fa-droplet"></i><span>Ocean Luxury</span></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">PERFUME UNISEX</span>
+                        <h3>Ocean Luxury</h3>
+                        <p>Una esencia fresca y exclusiva para cualquier ocasión.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$47.00</span>
+                            <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20comprar%20el%20perfume%20Ocean%20Luxury." target="_blank" rel="noopener noreferrer" class="btn-comprar"><i class="fa-brands fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="sin-resultados" id="sin-resultados" hidden>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>No encontramos esa fragancia</h3>
+                <p>Prueba con otro nombre o selecciona otra categoría.</p>
+            </div>
+        </section>
+
+        <section class="ofertas" id="ofertas">
+            <div class="container ofertas-content reveal">
+                <span class="eyebrow">OFERTAS ESPECIALES</span>
+                <h2>La fragancia perfecta te está esperando</h2>
+                <p>Consulta disponibilidad, precios y promociones directamente por WhatsApp.</p>
+                <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20conocer%20las%20ofertas%20de%20Perfumer%C3%ADa%20Beltr%C3%A1n." target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Ver ofertas</a>
+            </div>
+        </section>
+
+        <section class="nosotros section" id="nosotros">
+            <div class="container nosotros-container">
+                <div class="nosotros-text reveal">
+                    <span class="eyebrow">PERFUMERÍA BELTRÁN</span>
+                    <h2>Más que un perfume, una experiencia</h2>
+                    <p>Seleccionamos fragancias pensando en personas que buscan calidad, personalidad y una atención cercana al momento de elegir.</p>
+                    <div class="beneficios">
+                        <div><i class="fa-solid fa-gem"></i><span>Fragancias seleccionadas</span></div>
+                        <div><i class="fa-brands fa-whatsapp"></i><span>Atención directa por WhatsApp</span></div>
+                        <div><i class="fa-solid fa-heart"></i><span>Atención personalizada</span></div>
+                    </div>
+                </div>
+
+                <div class="nosotros-card reveal">
+                    <div class="card-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                    <span class="card-label">BELTRÁN</span>
+                    <h3>Tu esencia, tu identidad.</h3>
+                    <p>Fragancias que acompañan tus mejores momentos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="container contacto-content reveal">
+                <span class="eyebrow">CONTACTO</span>
+                <h2>¿Buscas un perfume especial?</h2>
+                <p>Escríbenos para consultar disponibilidad, precios y promociones.</p>
+                <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20perfumes%20disponibles." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>PERFUMERÍA BELTRÁN</h3>
+                <p>Esencias, elegancia y personalidad.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://wa.me/50578174953" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© <span id="year">2026</span> Perfumería Beltrán. Todos los derechos reservados.</span>
+            <a href="#inicio">Volver arriba <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/50578174953?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20perfumes." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
